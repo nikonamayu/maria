@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>音声サンプラー</title>
+    <title>荻谷まりあ音声サンプラー</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -27,13 +27,16 @@
 </head>
 <body>
     <h1>音声サンプラー</h1>
-    <button onclick="playSound('sound1')">音声1</button>
-    <button onclick="playSound('sound2')">音声2</button>
-    <button onclick="playSound('sound3')">音声3</button>
+    <button onclick="playSound('are.mp3')">あれ？</button>
+    <button onclick="playSound('ikimasuyo.mp3')">行きますよ</button>
+    <button onclick="playSound('kouda.mp3')">こうだ！</button>
+    <button onclick="playSound('nande.mp3')">なんで？</button>
+    <button onclick="playSound('nanikore.mp3')">なにこれ？</button>
 
     <script>
-        function playSound(soundId) {
-            const audio = new Audio(`sounds/${soundId}.mp3`);
+        // 指定された音声ファイルを再生する関数
+        function playSound(filename) {
+            const audio = new Audio(filename);
             audio.play();
         }
     </script>
